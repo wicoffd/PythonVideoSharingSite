@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+</head>
+<body>
+    <header>
+    <button class="button" href="#">Checkout</button>
+    <input type="button" class="button" value="Shopping Cart" href="#">
+    <button class="button" href="#">Wish List</button>
+    <a href="pageTwo.html" style="inherit" class="button">My Account</a>
+</header>
+<h1> Art Store </h1>
+<p class="greybar">
+    <button class="greybutton" href="#">&nbsp;Home </button>
+    <button class="greybutton" href="#">About Us </button>
+    <button class="greybutton" href="#">Art Works </button>
+    <button class="greybutton" href="#">Artists </button>
+</p>
+<div class="formdiv">
+<form action="http://faculty.washington.edu/ealmasri/assign1.php" method="post">
+
+ <ul>
+ <h2>Customer Registration</h2>
+ <h3>1. User Info</h3>
+ <hr style="margin-top: -20px"></hr>
+  <li class="vertical">
+    <label for="fistname" class="first">First Name</label>
+    <ul class="horizontallist"> 
+        <label for="lastname" >Last Name</label>
+    </ul>
+  </li>
+  <li class="vertical">
+    <input type="text" id="firstname" name="first"></input>
+        <ul class="horizontallist"><input type="lastname" id="name" name="last"></ul>
+  </li>
+  </li>
+  <li class="vertical">
+    <label for="mail">E-mail</label>
+    <li class="vertical"><input type="email" id="mail" name="email" style="width:360px"></input></li>
+  </li>
+  <li class="vertical">
+    <label for="password" class="password">Password</label>
+    <ul class="horizontallist"> 
+        <label for="passwordr" >Password Repeat</label>
+    </ul>
+  </li>
+  <li class="vertical">
+    <input type="pass" id="password" name="pass1"></input>
+        <ul class="horizontallist"><input type="pass" id="passwordr" name="pass2"></ul>
+  </li>
+  </li>
+  
+  <h3>2. Location</h3>
+  <hr></hr>
+  <li class="vertical">
+    <label for="address">Address</label>
+  </li>
+  <li class="vertical">
+    <input type="address" id="address" name="address" class="address">
+  </li>
+  <li class="vertical">
+    <label for="city">City</label>
+    <ul class="horizontallist"> 
+        <label for="state" class="state" >State</label>
+    </ul>
+    <ul class="horizontallist"> 
+        <label for="zip" class="zip" >Zip</label>
+    </ul>
+  </li>
+  <li class="vertical">
+    <input type="city" id="city" name="city"></input>
+    <ul class="horizontallist">
+        <input type="state" id="state" name="state"  class="stateinput">   </input> 
+    </ul>
+    <ul class="horizontallist">
+        <input type="zip" id="zip" name="zip" class="zip">   </input> 
+    </ul>
+  </li>
+  <li class="vertical">
+    <label for="phone">Phone</label>
+    <ul class="horizontallist"> 
+        <label for="country" class="onethreethree" >Country</label>
+    </ul>
+  </li>
+  <li class="vertical">
+    <input type="phone" id="phone" name="phone"></input>
+    <ul class="horizontallist">
+        <select name="country" required>
+            <option value="United States">United States </option>
+        </select>
+    </ul>
+  <li class="vertical">
+    <label for"continent" class="continent">Continent</label><br>
+    <input type="radio" id="africa" name="continent" value="Africa"/>
+    Africa<br>
+    <input type="radio" id="antarctica" name="continent" value="Antarctica"/>
+    Antarctica<br>
+    <input type="radio" id="asia" name="continent" value="Asia"/>
+    Asia<br>
+    <input type="radio" id="straya" name="continent" value="Australia"/>
+    Australia<br>
+    <input type="radio" id="europe" name="continent" value="Europe"/>
+    Europe<br>
+    <input type="radio" id="north_america" name="continent" value="North_America"/>
+    North America<br>
+    <input type="radio" id="south_america" name="continent" value="South_America"/>
+    South America<br>
+    </p>
+  </li>
+   
+  </li>
+  <h3>3. Personal Details</h3>
+  <hr style="margin-top: -20px"></hr>
+  <label for="birthday">Birth Day</label>
+    <ul class="horizontallist"> 
+        <label for="favorite" class="onethreethree" >Favorite Color</label>
+    </ul>
+    <li class="vertical">
+        <input type="date" id="birthdate" name="birthdate" class="birthdateinput"> </input>
+        <ul class="horizontallist"> 
+            <input name="favorite" type="color" onchange="newBackgroundColor(colorpicker.value);" style="margin-left:85px">
+        </ul>
+        </li>
+    <li class="vertical">
+        <label for="interest">Interest in Art</label>
+        <li class="vertical">Minimal</label><input type="range" name="length" class="slider" min="0" max="100" value="30" style="width:300px;"><label">Love it!</label></li>
+    </li>
+    <h3>4. All Done</h3>
+    <hr> </hr>
+    <li class="vertical"><input type="checkbox" name="accept" value="accept" required></input> I agree to the <a href="#">Terms of the Site</a>
+    <li class="vertical"><button type="button"><img src="start/images/button_ok.png"></img>Sign me up!</button></li>
+
+</ul>
+  
+</form>
+</div>
+</body>
+</html>
